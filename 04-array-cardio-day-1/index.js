@@ -28,7 +28,7 @@ const fifteen = investors.filter(inventor => inventor.year >= 1500 && inventor.y
 const fullNames = inventors.map(inventor => `${inventor.first} ${invetor.last}`);
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
-
+const ordered = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
 
