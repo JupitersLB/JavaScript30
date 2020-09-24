@@ -25,7 +25,7 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 const fifteen = investors.filter(inventor => inventor.year >= 1500 && inventor.year <= 1599);
 // Array.prototype.map()
 // 2. Give us an array of the inventors first and last names
-
+const fullNames = inventors.map(inventor => `${inventor.first} ${invetor.last}`);
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 
